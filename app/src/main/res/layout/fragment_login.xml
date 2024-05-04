@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_clr"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.LoginFragment">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:orientation="vertical"
+      android:paddingBottom="50dp"
+      android:layout_height="match_parent">
+      <ImageView
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:layout_gravity="center"
+          android:layout_marginTop="30dp"
+          android:src="@drawable/app_logo"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:textSize="25sp"
+          android:textColor="@color/black"
+          android:textStyle="bold"
+          android:layout_marginLeft="20dp"
+          android:layout_height="wrap_content"
+          android:text="Sign In"/>
+      
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:background="#ffbd59"
+          android:paddingBottom="30dp"
+          android:layout_margin="20dp">
+          <com.google.android.material.textfield.TextInputLayout
+              android:layout_margin="10dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="Email"
+              app:startIconDrawable="@drawable/ic_email"
+              tools:ignore="HardcodedText">
+
+              <com.google.android.material.textfield.TextInputEditText
+                  android:id="@+id/etLoginEmail"
+                  android:layout_width="match_parent"
+                  android:inputType="textEmailAddress"
+                  android:layout_height="wrap_content" />
+
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/input_login_password"
+              android:layout_margin="10dp"
+              app:startIconDrawable="@drawable/ic_lock"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              app:endIconMode="password_toggle"
+              android:hint="Password"
+              tools:ignore="HardcodedText">
+
+              <com.google.android.material.textfield.TextInputEditText
+                  android:id="@+id/et_login_password"
+                  android:layout_width="match_parent"
+                  android:inputType="textPassword"
+                  android:layout_height="wrap_content" />
+
+          </com.google.android.material.textfield.TextInputLayout>
+
+
+
+          <Button
+
+              android:layout_margin="10dp"
+              android:id="@+id/btn_login"
+              android:layout_width="match_parent"
+              android:layout_height="55dp"
+              android:text="Login"
+              android:textColor="@color/white"
+              android:background="#cf5001"
+              app:backgroundTint="#cf5001"
+              tools:ignore="HardcodedText" />
+
+          <TextView
+              android:id="@+id/tv_forgot"
+              android:textSize="16sp"
+              android:gravity="center"
+              android:text="Forget Password?"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"/>
+
+          <TextView
+              android:id="@+id/tv_new_register"
+              android:textSize="16sp"
+              android:gravity="center"
+              android:text="Create One?"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"/>
+      </LinearLayout>
+  </LinearLayout>
+
+</ScrollView>

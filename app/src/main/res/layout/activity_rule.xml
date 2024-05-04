@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_clr"
+    tools:context=".Screens.RuleActivity">
+    <TextView
+     android:textColor="@color/black"
+     android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:text="Rules"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    <TextView
+
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+
+        android:text="1.You have 10 second to answer the question you can see the timer for each question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="2.The test you have clicked will show questions 1 by 1. you need to click the right answer"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="3.At the end of the test you will see the score"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:textColor="@color/white"
+        android:text="Start Quiz"
+        android:onClick="openQuizScreen"
+        android:background="@drawable/rounded_bg"
+        app:backgroundTint="#ffbd59"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"/>
+</LinearLayout>
